@@ -1,0 +1,52 @@
+.hero-wrapper {
+	background: rgb(245, 245, 245);
+	padding: 30px 30px;
+	display: flex;
+	justify-content: center;
+	@media only screen and (max-width: 600px) {
+		flex-direction: column;
+	}
+
+	.hero-content {
+		align-self: center;
+		display: flex;
+		justify-content: flex-end;
+
+		.intro {
+			color: #1e514b;
+			opacity: 0.8;
+			line-height: 40px;
+			font-weight: 400;
+			font-size: 30px;
+			letter-spacing: 1.1px;
+			@media only screen and (max-width: 600px) {
+				text-align: center;
+				font-size: 15px;
+				line-height: 25px;
+			}
+			span {
+				font-size: 50px;
+				font-weight: 700;
+				line-height: 70px;
+				@media only screen and (max-width: 600px) {
+					line-height: 50px;
+					font-size: 35px;
+				}
+			}
+		}
+	}
+	.hero-image {
+		align-self: center;
+		@media only screen and (max-width: 600px) {
+			margin: auto;
+		}
+		img {
+			width: 400px;
+			height: auto;
+			@media only screen and (max-width: 600px) {
+				width: 250px;
+			}
+		}
+		margin-left: 100px;
+	}
+}

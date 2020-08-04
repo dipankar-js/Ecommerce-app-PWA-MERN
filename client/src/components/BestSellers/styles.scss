@@ -1,0 +1,28 @@
+.best-sellers {
+	margin: 50px 10px;
+	@media only screen and (max-width: 600px) {
+	}
+
+	.best-sellers-heading {
+		text-align: center;
+		letter-spacing: 0.75px;
+		color: #22262a;
+		font-weight: 400;
+	}
+
+	.products {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		@media only screen and (max-width: 600px) {
+			justify-content: center;
+		}
+	}
+}
+
+.loading {
+	text-align: center;
+	color: blanchedalmond;
+	font-size: 15px;
+	font-weight: 400;
+}
