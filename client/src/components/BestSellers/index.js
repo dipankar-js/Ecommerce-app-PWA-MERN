@@ -11,6 +11,10 @@ import { AppContext } from '../../context/ProductContext';
 const productImages = [Perfume1, Perfume2, Perfume3, Perfume4];
 function BestSellers() {
 	const { AllProducts } = useContext(AppContext);
+
+	if (!window.navigator.onLine) {
+		return <p className='offline-mode'>Go Online too see the products.</p>;
+	}
 	return (
 		<div className='best-sellers'>
 			<h1 className='best-sellers-heading'> BEST SELLERS</h1>

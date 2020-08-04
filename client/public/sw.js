@@ -1,4 +1,4 @@
-var CACHE_NAME = 'itcan-app';
+var CACHE_NAME = 'itcan-app1';
 var urlsToCache = [
 	'/',
 	'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap',
