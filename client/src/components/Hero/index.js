@@ -4,6 +4,7 @@ import PerfumeImage from '../../assets/perfume.png';
 import './styles.scss';
 
 function Hero() {
+	console.log('online', window.navigator.onLine);
 	return (
 		<div className='hero-wrapper'>
 			<div className='hero-content'>

@@ -1,20 +1,12 @@
-import React, { forwardRef, useEffect } from 'react';
-import { string, func, bool } from 'prop-types';
+import React from 'react';
 import classnames from 'classnames';
-import NumberFormat from 'react-number-format';
 import FormInput from '../FormInput';
 import { useForm } from 'react-hook-form';
 import Button from '../Button';
 
 import './style.scss';
 
-const AddAddressForm = ({
-	onAddressSubmit,
-	showing,
-	onBack,
-	buttonText,
-	defaultAddress
-}) => {
+const AddAddressForm = ({ onAddressSubmit, showing }) => {
 	const { handleSubmit, register, errors, setValue } = useForm();
 
 	return (
@@ -83,11 +75,5 @@ const AddAddressForm = ({
 		</form>
 	);
 };
-
-AddAddressForm.propTypes = {
-	onAddressSubmit: func
-};
-
-AddAddressForm.defaultProps = {};
 
 export default AddAddressForm;

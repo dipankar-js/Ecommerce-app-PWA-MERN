@@ -14,10 +14,9 @@ import axios from 'axios';
 function CheckoutDetails(props) {
 	const history = useHistory();
 	const { cartItems, totalPrice } = useContext(AppContext);
-
-	const [slot, setSlot] = useState({ time: '12:00' });
 	const [savedAddresses, setSavedAddresses] = useState([]);
 	const [showing, setShowing] = useState('');
+	const [offline, setOffline] = useState(false);
 
 	const [error, setError] = useState('');
 
@@ -36,6 +35,10 @@ function CheckoutDetails(props) {
 	};
 
 	const _onSubmit = async () => {
+		if (!window.navigator.onLine) {
+			setOffline(!offline);
+			return;
+		}
 		console.log(cartItems);
 		console.log(savedAddresses);
 
@@ -45,7 +48,7 @@ function CheckoutDetails(props) {
 			totalPrice: totalPrice
 		};
 
-		let response = await axios.post('http://localhost:5000/api/orders', order);
+		let response = await axios.post('/api/orders', order);
 
 		console.log(response);
 		history.push('/success');
@@ -103,6 +106,12 @@ function CheckoutDetails(props) {
 						className='medium label-6'
 						onClick={_onSubmit}
 					/>
+					{offline && (
+						<p className='empty-cart'>
+							{' '}
+							Your are offline.Place your order once you are online{' '}
+						</p>
+					)}
 				</div>
 			</div>
 		</div>

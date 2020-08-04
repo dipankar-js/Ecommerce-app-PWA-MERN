@@ -5,7 +5,8 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "NODE_ENV=production node server",
-		"dev": "nodemon server"
+		"dev": "nodemon server",
+		"heroku": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"author": "DIPANKAR BARMAN",
 	"license": "MIT",

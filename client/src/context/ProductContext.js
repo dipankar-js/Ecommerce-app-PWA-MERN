@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { products } from '../config/Products.json';
 import axios from 'axios';
 
 export const AppContext = createContext();
@@ -45,7 +44,7 @@ const ProductContextProvider = (props) => {
 	});
 
 	const fetchProducts = async () => {
-		let response = await axios.get('http://localhost:5000/api/products');
+		let response = await axios.get('/api/products');
 		setAllProducts(response.data.data);
 	};
 	return (

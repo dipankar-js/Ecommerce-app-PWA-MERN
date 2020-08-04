@@ -1,4 +1,4 @@
-import React, { Component, useContext } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../../context/ProductContext';
 import Perfume from '../../assets/product1.png';
 
@@ -7,22 +7,6 @@ import './styles.scss';
 function CartItem(props) {
 	const { _id, subtitle, title, price, discount, qty } = props.product;
 	const { cartItems, addToCart, removeFromCart } = useContext(AppContext);
-
-	const incrementQuantity = (_id) => {
-		addToCart(_id);
-	};
-
-	const decrementQuantity = (_id) => {
-		removeFromCart(_id);
-	};
-
-	// const removeFromCart = id => {
-	//     dispatch({
-	//         "type": "REMOVE_FROM_CART",
-	//         "key": "cartProducts",
-	//         "value": id
-	//     })
-	// }
 
 	return (
 		<div className='cart-item'>

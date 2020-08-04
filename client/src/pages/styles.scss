@@ -71,3 +71,21 @@ i {
 	background: #f8faf5;
 	margin: 0 auto;
 }
+
+.fallback {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(245, 245, 245);
+	padding: 50px 0;
+
+	.fallback-header {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+
+	.fallback-content {
+		margin-bottom: 30px;
+	}
+}

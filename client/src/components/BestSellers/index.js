@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Card from '../Card';
-import { products } from '../../config/Products.json';
 import Perfume1 from '../../assets/product1.png';
 import Perfume2 from '../../assets/product2.png';
 import Perfume3 from '../../assets/product3.png';

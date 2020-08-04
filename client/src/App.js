@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout';
 import ProductContextProvider from './context/ProductContext';
 import ScrollToTop from '../src/helpers/scrollToTop';
 import Success from './pages/Success';
+import Fallback from './pages/Fallback';
 function App() {
 	return (
 		<div>
@@ -25,6 +26,9 @@ function App() {
 							</Route>
 							<Route path='/success'>
 								<Success />
+							</Route>
+							<Route path='/fallback'>
+								<Fallback />
 							</Route>
 						</Switch>
 					</ScrollToTop>
