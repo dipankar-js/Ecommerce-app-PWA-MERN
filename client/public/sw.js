@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'site-dynamic-v3';
+const staticCacheName = 'site-static-v';
+const dynamicCacheName = 'site-dynamic-v';
 const assets = [
 	'/',
 	'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap',
