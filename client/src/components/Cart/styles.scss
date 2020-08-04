@@ -1,0 +1,62 @@
+.cart {
+	width: 100%;
+	min-height: 264px;
+	background: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+
+	.heading-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #000000;
+		margin: 0px 30px;
+
+		.cart-heading {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 22px;
+		}
+
+		.no-of-items {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	.divider {
+		width: 100%;
+		height: 3px;
+		background-color: rgba(128, 128, 128, 0.2);
+	}
+
+	.cart-items {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.expense-details {
+		width: 80%;
+		margin: auto;
+
+		.expense-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 12px 0px;
+
+			&.delivery-charges {
+				.expense-amount {
+					color: #73be12;
+				}
+			}
+
+			&.total-savings {
+				padding: 12px 0px;
+			}
+		}
+	}
+}

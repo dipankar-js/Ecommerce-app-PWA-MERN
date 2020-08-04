@@ -1,0 +1,11 @@
+.new-address-form {
+    display: block;
+
+    &.hide {
+        display: none;
+    }
+
+    &.hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+.custom-button {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0 16px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  background: none;
+
+  &.outline-transparent-button {
+    border: 1px solid #a7b1b5;
+    color: #fff;
+    background: transparent;
+    padding: 9px 18px;
+  }
+
+  &.no-outline-button {
+    border: none;
+  }
+
+  &.filled-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #73be12;
+    border: 0;
+  }
+
+  &.text-button {
+    border: none;
+  }
+
+  &.dotted-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #C4C4C4;
+    border-radius: 5px;
+    color: #C4C4C4;
+
+    .btn-text {
+      white-space: nowrap;
+    }
+  }
+
+
+}
+
+  .space-btn-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.icon-button {
+      justify-content: space-between;
+    }
+
+    .icon-btn {
+      justify-content: left;
+      height: 20px;
+    }
+
+    .btn-text {
+      margin-right: 10px;
+    }
+  }
